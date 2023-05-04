@@ -56,7 +56,15 @@ section {
 h2 {
 	color: #f05f40;
 	font-size: 28px;
-	margin-bottom: 10px;
+	margin-bottom: 40px;
+  position: relative;
+}
+
+.map-container {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+  width: 1100px;
+  margin: 0 auto;
+  align-items: left;
 }
 
 /**----------Footer---------**/
