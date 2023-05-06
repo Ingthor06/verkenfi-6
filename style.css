@@ -3,11 +3,13 @@ body {
 	font-size: 16px;
 	line-height: 1.5;
 	background-color: #f5f5f5;
-	color: #333;
+	color: #848484;
+  background-image: url("backgound-img.jpg");
 }
 
 header {
-	background-color: #fff;
+	background-color: #292929;
+  color: #848484;
 	padding: 20px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 	display: flex;
@@ -34,7 +36,8 @@ nav li {
 
 nav a {
 	text-decoration: none;
-	color: #333;
+  font-size: larger;
+	color: #848484;
 	font-weight: bold;
 	transition: all 0.3s ease-in-out;
 }
@@ -42,22 +45,25 @@ nav a {
 nav a:hover {
 	color: #f05f40;
   transition: 0.3s;
-  font-size: larger;
+  font-size: x-large;
 }
 
 /**-------Slideshow------**/
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 1050px;
   position: relative;
   margin: auto;
 }
 
-/* Hide the images by default */
 .mySlides {
   display: none;
 }
 
-/* Next and previous buttons */
+.mySlides img {
+  width: 100%;
+  height: auto;
+}
+
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -73,34 +79,59 @@ nav a:hover {
   user-select: none;
 }
 
-/* Position the next button to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
 }
 
-/* Animation for the slideshow */
+.dot {
+  display: inline-block;
+  margin: 0 2px;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #bbb;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2s;
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
 }
 
 /**-----Main_Body------**/
@@ -119,12 +150,149 @@ section {
 	margin: 10px;
 }
 
+
 h2 {
 	color: #f05f40;
 	font-size: 28px;
 	margin-bottom: 40px;
   position: relative;
 }
+
+.hero-image {
+  background-image: url('https://via.placeholder.com/1500x500');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-image h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-image p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.hero-image a {
+  background-color: #fff;
+  color: #333;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.hero-image a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+.movie {
+  background-color: #1e1e1e;
+  border: 2px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.movie:hover {
+  box-shadow: 0px 0px 20px 0px #ddd;
+}
+
+.movie img {
+  display: block;
+  margin: 0 auto 10px auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.movie h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.movie p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.movie a {
+  background-color: #333;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+.movie a:hover {
+  background-color: #fff;
+  color: #333;
+}
+
+
+/**------Video------**/
+/************** Viðmið 60em 960px = fartölvur *******************/
+
+@media screen and (min-width: 60em) {  
+  .container {
+      max-width: 60em; /* verður ekki breiðari dálkur */
+      margin: 0 auto; /* top+bottom og left+right */
+      padding: 0;
+  }
+  h1 {
+      font-size: 2.5em;
+  }
+  .topnav {
+      margin-top: 7em;
+      display: flex;
+      justify-content: flex-end;
+  }
+  .topnav a {
+      padding: 0 0 0 3em;
+  }
+
+  .verkefni {
+      text-align: right;
+      color: #F7D37E;
+  }
+
+  .gap {
+      gap: 3em
+  }
+  .margintop {
+      margin-top: 3em;
+  }
+  .fyrirsogn h1 {
+      font-size: 8em;
+  }
+}
+@media screen and (min-width: 90em) {  
+  .fyrirsogn {
+      max-width: 90em;
+  }
+}
+
+/**-----MAP------**/
 
 .map-container {
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
@@ -133,83 +301,6 @@ h2 {
   align-items: left;
 }
 
-/**--------Login_Box-----------**/
-
-.form-box:before {
-	background-image: url("https://i.postimg.cc/8cnYLpfc/ddddd.jpg");
-	width: 100%;
-	height: 100%;
-	background-size: cover;
-	content: "";
-	position: fixed;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-	z-index: -1;
-	display: block;
-	filter: blur(2px);
-}
-.form-box .header-text {
-	font-size: 32px;
-	font-weight: 600;
-	padding-bottom: 30px;
-    text-transform: uppercase;
-}
-.form-box input {
-	margin: 10px 0px;
-	border: none;
-	padding: 10px;
-	border-radius: 5px;
-	width: 100%;
-	font-size: 18px;
-	font-family: poppins;
-}
-.form-box input[type=checkbox] {
-	display: none;
-}
-.form-box label {
-	position: relative;
-	margin-left: 5px;
-	margin-right: 10px;
-	top: 5px;
-	display: inline-block;
-	width: 20px;
-	height: 20px;
-	cursor: pointer;
-}
-.form-box label:before {
-	content: "";
-	display: inline-block;
-	width: 20px;
-	height: 20px;
-	border-radius: 5px;
-	position: absolute;
-	left: 0;
-	bottom: 1px;
-	background-color: #ddd;
-}
-.form-box input[type=checkbox]:checked+label:before {
-	content: "\2713";
-	font-size: 20px;
-	color: #000;
-	text-align: center;
-	line-height: 20px;
-}
-.form-box span {
-	font-size: 14px;
-}
-.form-box button {
-	background-color: rgb(6, 0, 178);
-	color: #fff;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-	width: 100%;
-	font-size: 18px;
-	padding: 10px;
-	margin: 20px 0px;
-}
 
 /**----------Footer---------**/
 

@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="iframe.css">
     <link rel="icon" type="image/png" href="Tækniskólinn logo transparent.png">
-    <title>TæknisklólaBíó V6</title>
+    <title>TæknisklólaBíó</title>
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -21,56 +23,98 @@
 			</ul>
 		</nav>
     </header>
-
-        <div class="slideshow-container">
-            <div class="mySlides">
-            <img src="test img.jpg" alt="Image 1">
-            </div>
-        
-            <div class="mySlides">
-            <img src="cinema-icon-cinema-logo-png-transparent.png" alt="Image 2">
-            </div>
-        
-            <div class="mySlides">
-            <img src="Tækniskólinn logo transparent.png" alt="Image 3">
-            </div>
-        
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="guardians of the galaxy vol 3 (cover).jpeg" style="width:100%">
         </div>
       
+        <div class="mySlides fade">
+          <img src="evil dead rise (cover).jpg" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="super mario bros (cover).jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img src="popes exorcist (cover).jpeg" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+
+      <section class="movie-grid">
+        <div class="movie">
+            <img src="guardians of the galaxy vol 3 vertical (cover).jpeg" alt="Movie Poster">
+            <h3>GUARDIANS OF THE GALAXY VOL.3</h3>
+            <p>Peter Quill, sem er enn að jafna sig á dauða Gamoru, safnar hópnum saman til að verja alheiminn. Ef verkefnið misheppnast, gæti það leitt til endaloks Verndara Vetrarbrautarinnar.</p>
+            <a href="#">Panta Miða</a>
+        </div>
+        <div class="movie">
+            <img src="evil dead rise vertical (cover).jpg" alt="Movie Poster">
+            <h3>EVIL DEAD RISE</h3>
+            <p>Tvær systur sem hafa ekki sést lengi hittast á ný, en endurfundirnir verða stuttir þegar fjölskyldumeðlimir þeirra verða andsettir af illum öndum. Þær verða nú að berjast fyrir lífi sínu þegar þær standa frammi fyrir martraðarkenndu útgáfu fjölskyldu sinni.</p>
+            <a href="#">Panta Miða</a>
+        </div>
+        <div class="movie">
+            <img src="super mario bros vertical (cover).jpg" alt="Movie Poster">
+            <h3>THE SUPER MARIO BROS MOVIE</h3>
+            <p>Píparinn Mario frá Brooklyn ferðast í gegnum Svepparíkið með prinsessunni Peach og mannlega sveppinum Toad í leit að bróður Mario, Luigi. Markmiðið er að bjarga heiminum frá hinu hrikalega eldspúandi skrímsli Bowser.</p>
+            <a href="#">Panta Miða</a>
+        </div>
+        <div class="movie">
+            <img src="popes exorcist vertical (cover).jpeg" alt="Movie Poster">
+            <h3>POPE'S EXORCIST</h3>
+            <p>Portrayal of a real-life figure Father Gabriele Amorth, a priest who acted as chief exorcist of the Vatican and who performed more than 100,000 exorcisms in his lifetime. (He passed away in 2016 at the age of 91.) Amorth wrote two memoirs -- An Exorcist Tells His Story and An Exorcist: More Stories -- and detailed his experiences battling Satan and demons that had clutched people in their evil.</p>
+            <a href="#">Panta Miða</a>
+        </div>
+    </section>
+    <br><br>
 
     <section>
         <h2>Velkomin Í TækniskólaBíó</h2>
-        <p>Velkomin í TækniskólaBíó, þar sem við bragðgóðum kvikmyndunum til lífsins! Okkar uppfærðu stofnanir lofa mörgum sjónvarpskössum með þægilegum sætum og nýjustu hljóð- og myndkerfum sem búa til alvöru hversdag í bíósalnum. Við bjóðum upp á mikið úrval af kvikmyndum, þar á meðal nýjustu hitana, sjálfstæðum kvikmyndum og klassíkum, auk þess sem við höfum sérstaka viðburði og gestaröddur. Við höfum djúpt rætt okkar í samfélaginu og samstarfum við staðbundin skóla og félög til að hýsa viðburði og aðstoða við fjármögnun þeirra. Við stoltumst af því að bjóða upp á frábær þjónustu og velkomnandi andrúmsloft sem hentar öllum bæði fyrir fjölskyldur, pör og einstaklinga. Komdu og heimsækir okkur og uppgötvaðu hversu stórkostlegar kvikmyndir geta verið í TækniskólaBíó!.</p>
+        <p>Velkomin í TækniskólaBíó, þar sem við bragðgóðum kvikmyndunum til lífsins! Okkar uppfærðu stofnanir lofa mörgum sjónvarpskössum með þægilegum sætum og nýjustu hljóð- og myndkerfum sem búa til alvöru hversdag í bíósalnum. Við bjóðum upp á mikið úrval af kvikmyndum, þar á meðal nýjustu hitana, sjálfstæðum kvikmyndum og klassíkum, auk þess sem við höfum sérstaka viðburði og gestaröddur. Við höfum djúpt rætt okkar í samfélaginu og samstarfum við staðbundin skóla og félög til að hýsa viðburði og aðstoða við fjármögnun þeirra. Við stoltumst af því að bjóða upp á frábær þjónustu og velkomnandi andrúmsloft sem hentar öllum bæði fyrir fjölskyldur, pör og einstaklinga. Komdu og heimsækir okkur og uppgötvaðu hversu stórkostlegar kvikmyndir geta verið í TækniskólaBíó!</p>
     </section>
     
     
     <section>
         <h2>Um Okkur</h2>
-        <p>Við bjóðum upp á frábær kvikmyndakynningu í TækniskólaBíó. Okkar stofnanir eru búin með nýjustu tækni og búa til alvöru umhverfi fyrir kvikmyndanámskeið. Við höfum marga bíósalasýningar á dagskrá og sýnum ýmsar kvikmyndir, þar á meðal nýjustu hitana og klassíkum, sérstökum viðburðum og gestaröðum. Við bjóðum upp á þægileg sæti, eins og öll sæti okkar eru mjúk og búin til þess að gefa þér hamingjuna af kvikmyndakynningu. Við tölum við gesti okkar með virðingu og hvetjum þá til þess að njóta allra þjónustu okkar. Okkar matreiðsla í sveita hefur svo verið sérstaklega hönnuð til að uppfylla þarfir þeirra sem ætla að njóta kvikmyndanna með góðu matarboði. Við gerum okkur stöðugt grein fyrir að gestir okkar eru okkar mikilvægasti hluti, og við leggjum áherslu á það að tryggja að þeir fái ánægju og hamingju í hvert skipti sem þeir heimsækja okkur..</p>
+        <p>Við bjóðum upp á frábær kvikmyndakynningu í TækniskólaBíó. Okkar stofnanir eru búin með nýjustu tækni og búa til alvöru umhverfi fyrir kvikmyndanámskeið. Við höfum marga bíósalasýningar á dagskrá og sýnum ýmsar kvikmyndir, þar á meðal nýjustu hitana og klassíkum, sérstökum viðburðum og gestaröðum. Við bjóðum upp á þægileg sæti, eins og öll sæti okkar eru mjúk og búin til þess að gefa þér hamingjuna af kvikmyndakynningu. Við tölum við gesti okkar með virðingu og hvetjum þá til þess að njóta allra þjónustu okkar. Okkar matreiðsla í sveita hefur svo verið sérstaklega hönnuð til að uppfylla þarfir þeirra sem ætla að njóta kvikmyndanna með góðu matarboði. Við gerum okkur stöðugt grein fyrir að gestir okkar eru okkar mikilvægasti hluti, og við leggjum áherslu á það að tryggja að þeir fái ánægju og hamingju í hvert skipti sem þeir heimsækja okkur.</p>
     </section>
     
     <section>
         <h2>Hafa Samband</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet justo eget velit posuere semper eu eu ipsum.</p>
+        <p>Við hlökkum alltaf til að fá póst frá gestum okkar, svo þú ert velkominn til að hafa samband með okkur með því að nota tengiliðinn hér fyrir neðan. Hvort sem þú hefur spurningar um vörur eða þjónustu okkar, tillögu fyrir hvernig við getum bætt upplifun þína, eða bara viljir segja hæ, munum við gera okkar besta til að svara skilaboðunum þínum eins fljótt og mögulegt er. Eða getur þú haft beint samband við okkur á netfangið eða símanúmerið sem gefið er á þessari síðu. Takk fyrir áhuga þinn á vefsíðunni okkar, og við hlökkum til að heyra frá þér!</p>
     </section>
     <br>
-    </main>
-
     
-
-    <div class="form-box">
-        <div class="header-text">
-          <p>gefðu þér augnablik af slökun vellíðan hamingju.</p>
-        </div><input placeholder="Your Email Address" type="text"> <input placeholder="Your Password" type="password"> <input id="terms" type="checkbox"> <label for="terms"></label><span>Agree with <a href="README.md">Terms & Conditions</a></span> <button>login</button>
-      </div>
+    
+    <section class="container">
+        <h4>Við Mælum Með:</h4>
+        <iframe 
+          class="gluggi"
+          src="https://www.youtube.com/embed/TnGl01FkMMo" 
+          title="YouTube video player" 
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
+      </section>
+      <br><br>
 
     <div class="map-container">
     <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d720.2911281178771!2d-21.903290857203906!3d64.13893551525868!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48d674cc84500001%3A0x16719bf129fa31a7!2zVMOma25pc2vDs2xpbm4!5e0!3m2!1sen!2sis!4v1683121983311!5m2!1sen!2sis" width="1100" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
 	</div>
     <br><br>
     
+    </main>
     <footer class="footer-section">
         <div class="container">
             <div class="footer-cta pt-5 pb-5">
@@ -108,11 +152,11 @@
                     <div class="col-xl-4 col-lg-4 mb-50">
                         <div class="footer-widget">
                             <div class="footer-logo">
-                                <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid" alt="logo"></a>
+                                <a href="index.html"><img src="Tækniskólinn logo transparent.png" class="img-fluid" alt="logo"></a>
                             </div>
                             <div class="footer-text">
-                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
-                                elit,Lorem ipsum dolor sit amet.</p>
+                                <p>Tækniskólinn er framhaldsskóli í Reykjavík, sem býður upp á bæði verknám og sérnám. Hann varð til árið 2008 við sameiningu tveggja forvera þess: Iðnskólans í Reykjavík og Fjöltækniskólans.</p>
+                                <p>Tækniskólinn is an upper secondary school in Reykjavík, Iceland, providing both vocational and specialized programmes. It was formed in 2008 through the merger of its two predecessors: Iðnskólinn í Reykjavík and Fjöltækniskólinn.</p>
                             </div>
                             <div class="footer-social-icon">
                             </div>
@@ -124,10 +168,9 @@
                                 <h3>Useful Links</h3>
                             </div>
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">about</a></li>
-                                <li><a href="#">services</a></li>
-                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Heim</a></li>
+                                <li><a href="#">Myndir</a></li>
+                                <li><a href="#">Netbókun</a></li>
 
                             </ul>
                         </div>
