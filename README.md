@@ -1,1 +1,1 @@
-vefsíða
+þetta er vefsíða um bíó tækniskólans / verkefni 6 í vefþróun
